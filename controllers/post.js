@@ -4,4 +4,9 @@ const getPosts = (req , res) => {
     }catch(error) {
         res.send('oops, something went wrong!!');
     }
-}
+};
+
+
+module.exports = {
+    getPosts,
+};
