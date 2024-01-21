@@ -6,6 +6,8 @@ const PORT =3000;
 
 const mainRoutes = require('./routes/index');
 const dbConfig = require('./config/dbConfig');
+
+app.use(express.json());
 app.use('/', mainRoutes);
 
 app.listen(3000 , () => {
